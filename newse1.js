@@ -19,5 +19,5 @@ app.use('/menuitem', menuRouter);
 app.listen(3000, () => {
     console.log("http://localhost:3000");
 });
-//Git is working and hub updated
-//git is working and pull is testing
+//Git is working and hub updated cmd.: git push
+//git is working and pull is testing cmd.:git pull
