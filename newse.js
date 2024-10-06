@@ -1,10 +1,11 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
 
 
 const db = require('./dbcon');
 
-
+const PORT=process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
@@ -21,6 +22,6 @@ app.use('/person', personRouter);
 app.use('/menuitem', menuRouter); 
 
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("http://localhost:3000");
 });
