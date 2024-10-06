@@ -24,4 +24,4 @@ app.use('/menuitem', menuRouter);
 
 app.listen(PORT, () => {
     console.log("http://localhost:3000");
-});
+}); 
