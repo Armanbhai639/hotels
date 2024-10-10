@@ -33,7 +33,7 @@ app.use(logRequest);
 
     const localauthmiddleware =passport.authenticate('local', {session:false});
     app.use(passport.initialize());
-    app.use('/person', localauthmiddleware, personRouter);
+    app.use('/person', personRouter);
     app.use('/menuitem', menuRouter); 
 
 
